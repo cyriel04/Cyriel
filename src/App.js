@@ -7,10 +7,8 @@ import "./App.css";
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 // import { Fullpage, Slide, HorizontalSlider } from "fullpage-react";
-const one = `https://images.unsplash.com/photo-1514544634146-c22702f74103?ixlib=rb-0.3.5&s=7d49b2bcf8200c1556780fd24d01bab4&auto=format&fit=crop&w=1350&q=80`;
-const two = `https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-0.3.5&s=d6f82cfe462f2803e692c9e4f4944e0d&auto=format&fit=crop&w=1574&q=80`;
 const three =
-	"https://images.unsplash.com/photo-1485812262622-c6f1804c42f0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b418d17097f2bbe2ee8d0e41befb7099&auto=format&fit=crop&w=1349&q=80";
+	"https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aecdd0f4ea59dfb2d0622cab6e3c3901&auto=format&fit=crop&w=1355&q=80";
 const four = `https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f1d38bbdda690e28a81673c06325075&auto=format&fit=crop&w=1778&q=80`;
 const controlsProps = {
 	style: {
@@ -83,13 +81,18 @@ class App extends Component {
 					<FullPage>
 						<Slide
 							style={{
-								backgroundImage: `url(${four})`,
-								backgroundSize: "cover"
+								background: `url(${four})`,
+								backgroundSize: "cover",
+								maxWidth: "100%",
+								backgroundPosition: "center center",
+								backgroundAttachment: "fixed",
+								backgroundRepeat: "no-repeat"
 							}}
 						>
 							<Avatar
 								shape="circle"
 								style={{
+									zIndex: "inherit",
 									marginTop: 40,
 									height: 300,
 									width: 300
