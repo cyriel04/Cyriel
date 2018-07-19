@@ -1,6 +1,7 @@
 .App {
 	text-align: center;
 	margin: 0;
+	padding-bottom: 0px;
 }
 
 .App-logo {
@@ -8,6 +9,9 @@
 	height: 80px;
 }
 
+.gg {
+	height: 2000px;
+}
 .App-header {
 	background-color: #222;
 	color: white;

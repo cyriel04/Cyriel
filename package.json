@@ -4,11 +4,13 @@
 	"private": true,
 	"homepage": "https://cyriel04.github.io/cyriel",
 	"dependencies": {
-		"fullpage-react": "^3.0.33",
+		"antd": "^3.7.0",
 		"gh-pages": "^1.2.0",
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1",
-		"react-scripts": "1.1.4"
+		"react-full-page": "^0.1.5",
+		"react-scripts": "1.1.4",
+		"react-sticky": "^6.0.3"
 	},
 	"scripts": {
 		"start": "react-scripts start",
